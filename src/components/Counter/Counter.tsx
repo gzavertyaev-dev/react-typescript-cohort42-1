@@ -14,13 +14,13 @@ function Counter({ count, onMinus, onPlus }: CounterProps) {
   // 2. setCount - это функция(setState), которая изменяет сотояние(state). Является единственным способом изменения состояния
   // 3. useState - ф-я хук(вспомогательные функции из библиотеки React для работы и манипуляции компонентами). Функция, которая
   // возвращает массив из 2 элементов: 1 эл - это состояние, а 2 - Й setState
-  // const onPlus = () => {
+  // const onPlus = (): void => {
   //   setCount((prevValue: number) => {
   //     return prevValue + 1;
   //   });
   // };
 
-  // const onMinus = () => {
+  // const onMinus = (): void => {
   //   setCount((prevValue: number) => {
   //     return prevValue - 1;
   //   });

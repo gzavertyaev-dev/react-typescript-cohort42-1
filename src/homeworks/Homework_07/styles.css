@@ -1,0 +1,35 @@
+.homework07-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 50px;
+  padding: 100px;
+}
+
+.succes-modal-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.modal-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.modal-info {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: purple;
+}
+
+.modal-icon {
+  width: 200px;
+  height: 200px;
+}

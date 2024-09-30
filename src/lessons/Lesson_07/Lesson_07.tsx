@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "components/Button/Button";
 import Counter from "components/Counter/Counter";
 
-import "./styles.css";
+import { PageWrapper } from "./styles";
 
 // !! Есть 2 основных способа вызова перерендера(обновления) компонента:
 // 1 - изменения state(посредством вызова функции setState())
@@ -88,7 +88,7 @@ function Lesson_07() {
   };
 
   return (
-    <div className="lesson07-wrapper">
+    <PageWrapper>
       <Counter count={count} onMinus={onMinus} onPlus={onPlus} />
       <Button
         name="Send"
@@ -96,7 +96,7 @@ function Lesson_07() {
           console.log(`Сounter ${count} sent to server successfully`);
         }}
       />
-    </div>
+    </PageWrapper>
   );
 }
 

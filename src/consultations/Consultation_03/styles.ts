@@ -1,13 +1,15 @@
-.consultation03-wrapper {
+import styled from "@emotion/styled";
+
+export const Consultation03Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
   gap: 40px;
   padding: 100px;
-}
+`;
 
-.ingredient-buttons-container {
+export const IngredientButtonsContainer = styled.div`
   display: flex;
   gap: 30px;
   min-width: 700px;
@@ -16,26 +18,28 @@
   padding: 40px;
   border: 2px solid black;
   border-radius: 4px;
-}
+`;
 
-.ingredient-button-control {
+export const IngredientButtonControl = styled.div`
   width: 200px;
-}
+`;
 
-.ingredients-container {
+export const IngredientsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
+`;
 
-.ingredients-title {
+export const IngredientsTitle = styled.div`
   font-size: 40px;
   font-weight: bold;
   color: purple;
-}
+`;
 
-.ingredient {
+export const IngredientItemsContainer = styled.div``;
+
+export const IngredientItem = styled.div`
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
-}
+`;

@@ -2,7 +2,13 @@ import { ReactNode } from "react";
 import { v4 } from "uuid";
 
 import { Cars } from "./types";
-import "./styles.css";
+import {
+  CarCardWrapper,
+  CarInfo,
+  CarInfoContainer,
+  CarInfoTitle,
+  PageWrapper,
+} from "./styles";
 
 function Homework_06() {
   const cars: Cars[] = [
@@ -17,24 +23,24 @@ function Homework_06() {
     const carId: string = v4();
 
     return (
-      <div key={carId} className="car-card-wrapper">
-        <div className="car-info-container">
-          <p className="car-info-title">Brand:</p>
-          <p className="car-info">{car.brand}</p>
-        </div>
-        <div className="car-info-container">
-          <p className="car-info-title">Price:</p>
-          <p className="car-info">{`${car.price}$`}</p>
-        </div>
-        <div className="car-info-container">
-          <p className="car-info-title">Fuel type:</p>
-          <p className="car-info">{car.isDiesel ? "Diesel" : "Petrol"}</p>
-        </div>
-      </div>
+      <CarCardWrapper key={carId}>
+        <CarInfoContainer>
+          <CarInfoTitle>Brand:</CarInfoTitle>
+          <CarInfo>{car.brand}</CarInfo>
+        </CarInfoContainer>
+        <CarInfoContainer>
+          <CarInfoTitle>Price:</CarInfoTitle>
+          <CarInfo>{`${car.price}$`}</CarInfo>
+        </CarInfoContainer>
+        <CarInfoContainer>
+          <CarInfoTitle>Fuel type:</CarInfoTitle>
+          <CarInfo>{car.isDiesel ? "Diesel" : "Petrol"}</CarInfo>
+        </CarInfoContainer>
+      </CarCardWrapper>
     );
   });
 
-  return <div className="homework6-wrapper">{carCards}</div>;
+  return <PageWrapper>{carCards}</PageWrapper>;
 }
 
 export default Homework_06;

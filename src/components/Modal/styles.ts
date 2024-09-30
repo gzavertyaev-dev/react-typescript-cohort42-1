@@ -1,4 +1,6 @@
-.modal-wrapper {
+import styled from "@emotion/styled";
+
+export const ModalWrapper = styled.div`
   position: fixed;
   display: flex;
   justify-content: center;
@@ -8,9 +10,9 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-}
+`;
 
-.modal-component {
+export const ModalComponent = styled.div`
   display: flex;
   flex-direction: column;
   border: 2px solid black;
@@ -21,4 +23,4 @@
   padding: 40px;
   background-color: white;
   overflow-y: auto;
-}
+`;

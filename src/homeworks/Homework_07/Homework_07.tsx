@@ -11,7 +11,13 @@ import Button from "components/Button/Button";
 
 // 3. Далее импортируется все необходимое по относительному пути
 import { Simpsons } from "./types";
-import "./styles.css";
+import {
+  SuccessModalWrapper,
+  ModalIcon,
+  ModalInfo,
+  ModalInfoContainer,
+  PageWrapper,
+} from "./styles";
 
 function Homework_07() {
   const [likes, setLikes] = useState<number>(0);
@@ -49,7 +55,7 @@ function Homework_07() {
   };
 
   return (
-    <div className="homework07-wrapper">
+    <PageWrapper>
       <LoginForm />
       <SimponsCard
         avatar={homerSimpson.avatar}
@@ -74,22 +80,20 @@ function Homework_07() {
       <Button onClick={openModal} name="Open Modal" />
       {isModalOpened && (
         <Modal closeModal={closeModal}>
-          <div className="succes-modal-wrapper">
-            <div className="modal-info-container">
-              <p className="modal-info">
-                Your data has been saved successfully!!!
-              </p>
-              <img
+          <SuccessModalWrapper>
+            <ModalInfoContainer>
+              <ModalInfo>Your data has been saved successfully!!!</ModalInfo>
+              <ModalIcon
                 className="modal-icon"
                 src="https://w7.pngwing.com/pngs/442/715/png-transparent-check-mark-computer-icons-icon-design-cheque-successful-angle-logo-grass-thumbnail.png"
                 alt="Success Icon"
               />
-            </div>
+            </ModalInfoContainer>
             <Button name="Close Modal" onClick={closeModal} />
-          </div>
+          </SuccessModalWrapper>
         </Modal>
       )}
-    </div>
+    </PageWrapper>
   );
 }
 

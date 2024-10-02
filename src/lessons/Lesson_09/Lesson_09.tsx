@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ChangeEvent } from "react";
 
 import Input from "components/Input/Input";
 
@@ -10,7 +10,7 @@ function Lesson_09() {
   const [catFact, setCatFact] = useState<string | undefined>(undefined);
   const [error, setError] = useState<string | undefined>(undefined);
 
-  const onChangeValue = (event: any) => {
+  const onChangeValue = (event: ChangeEvent<HTMLInputElement>) => {
     // event.target.value - то что ввел пользватель в input
     setInputValue(event.target.value);
   };

@@ -6,6 +6,7 @@ import Home from "pages/UserApp/Home/Home";
 import About from "pages/UserApp/About/About";
 import ContactUs from "pages/UserApp/ContactUs/ContactUs";
 import Login from "pages/UserApp/Login/Login";
+import { APP_ROUTES } from "constants/routes";
 
 // HOMEWORKS
 import Homework_06 from "homeworks/Homework_06/Homework_06";
@@ -30,10 +31,10 @@ function App() {
       <GlobalStyles />
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/login" element={<Login />} />
+          <Route path={APP_ROUTES.HOME} element={<Home />} />
+          <Route path={APP_ROUTES.ABOUT} element={<About />} />
+          <Route path={APP_ROUTES.CONTACT_US} element={<ContactUs />} />
+          <Route path={APP_ROUTES.LOGIN} element={<Login />} />
         </Routes>
       </Layout>
       {/* LESSONS */}

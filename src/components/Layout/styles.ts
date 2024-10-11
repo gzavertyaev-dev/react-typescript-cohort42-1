@@ -28,6 +28,11 @@ export const HeaderLogo = styled.div`
   cursor: pointer;
 `;
 
+export const LogoImg = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
 export const HeaderNav = styled.nav`
   display: flex;
   gap: 30px;

@@ -18,6 +18,7 @@ import Homework_07 from "homeworks/Homework_07/Homework_07";
 import Homework_08 from "homeworks/Homework_08/Homework_08";
 import Homework_09 from "homeworks/Homework_09/Homework_09";
 import Homework_11 from "homeworks/Homework_11/Homework_11";
+import Homework_13 from "homeworks/Homework_13/Homework_13";
 
 // LESSONS
 import Lesson_06 from "lessons/Lesson_06/Lesson_06";
@@ -53,13 +54,14 @@ function App() {
       {/* <Lesson_08 /> */}
       {/* <Lesson_09 /> */}
       {/* <Lesson_11 /> */}
-      <Lesson_13 />
+      {/* <Lesson_13 /> */}
       {/* HOMEWORKS */}
       {/* <Homework_06 /> */}
       {/* <Homework_07 /> */}
       {/* <Homework_08 /> */}
       {/* <Homework_09 /> */}
       {/* <Homework_11 /> */}
+      <Homework_13 />
       {/* CONSULTATIONS */}
       {/* <Consultation_03 /> */}
     </BrowserRouter>
